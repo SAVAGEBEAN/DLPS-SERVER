@@ -38,4 +38,4 @@ db.on('error',(err)=>{
 db.once('open',()=>{
     console.log("Connected")
 })
-app.listen(5000)
+app.listen(process.env.PORT || 5000)
